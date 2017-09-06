@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.julienne.labexercise1.MainActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/quizOneLabel"
+            android:layout_column="1"
+            android:layout_marginTop="25dp"
+            android:padding="25dip"
+            android:text="Quiz 1:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/quizOneScore"
+            android:layout_marginTop="25dp"
+            android:ems="8"
+            android:gravity="right" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/quizTwoLabel"
+            android:layout_column="1"
+            android:padding="25dip"
+            android:text="Quiz 2:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/quizTwoScore"
+            android:gravity="right" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/SeatworksLabel"
+            android:layout_column="1"
+            android:padding="25dip"
+            android:text="Seatworks:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/SeatworksScore"
+            android:gravity="right" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/LabExerLabel"
+            android:layout_column="1"
+            android:padding="25dip"
+            android:text="Lab Exercises:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/LabExerScore"
+            android:gravity="right" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/MajorExamLabel"
+            android:layout_column="1"
+            android:padding="25dip"
+            android:text="Major Exam:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/MajorExamScore"
+            android:gravity="right" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        android:layout_above="@+id/etName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="callSecondActivity"/>
+
+
+    <TextView
+        android:text="Abucay, Julienne E. - 4ITB"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"/>
+
+
+
+</TableLayout>
